@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Esther Udoye – Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(253, 246, 246);
+      color: #333;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+    }
+
+    nav img {
+      height: 50px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #77e4d7;
+    }
+
+    .main {
+      margin-top: 100px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #222;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      padding: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .project-card img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .project-info {
+      flex: 1;
+    }
+
+    .project-info h2 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    .project-info p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .project-info a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      color: #77e4d7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project-info a:hover {
+      color: #5cd3c5;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .project-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .project-card img {
+        max-width: 100%;
+      }
+
+      .project-info {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <img src="/E.png" alt="Esther's Logo">
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="main">
+  <h1>My Projects</h1>
+
+  <!-- Project 1 -->
+  <div class="project-card">
+    <img src="/IMG-20250616-WA0140.jpg" alt="Project 1 Screenshot">
+    <div class="project-info">
+      <h2>Charity Website</h2>
+      <p>A personal website built with HTML, CSS, and JavaScript to showcase my skills as a front-end developer and a Philantrophist.</p>
+      <a href="https://github.com/Esthercode2025/My-first-project-pearls-Of-hope.git" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-card">
+    <img src="/image gallery.jpg" alt="Project 2 Screenshot">
+    <div class="project-info">
+      <h2>Image Gallery Websie</h2>
+      <p>A Pinterest-style image gallery using Flexbox, CSS Grid, and responsive design principles.</p>
+
+      <a href="https://github.com/yourusername/gallery-app" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

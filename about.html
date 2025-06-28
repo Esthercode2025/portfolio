@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Esther Udoye</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(253, 246, 246);
+      color: #333;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav img {
+      height: 60px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #77e4d7;
+    }
+
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 80px 40px;
+      gap: 60px;
+      margin-top: 80px; /* Reduced for better spacing */
+    }
+
+    .about-image {
+      flex: 1;
+      max-width: 350px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-content {
+      flex: 2;
+      min-width: 300px;
+      max-width: 600px;
+      animation: fadeInSlide 1.2s ease forwards;
+    }
+
+    .about-content h1 {
+      font-size: 3rem;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .about-content h2 {
+      color: #77e4d7;
+      margin-bottom: 25px;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    @keyframes fadeInSlide {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-top: 10px;
+        align-items: flex-start;
+      }
+
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+        margin-top: 100px; /* Adjusted for smaller screens */
+      }
+
+      .about-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .about-content h2 {
+        font-size: 1.3rem;
+      }
+
+      .about-content p {
+        font-size: 1rem;
+      }
+
+      .about-image {
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <img src="/E.png" alt="Esther's Logo">
+    <div class="nav-links">
+      <a href="port.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="about-section">
+    <div class="about-image">
+      <img src="/Esther.jpg" alt="Esther Udoye">
+    </div>
+
+    <div class="about-content">
+      <h1>Esther Udoye</h1>
+      <h2>Front-End Developer</h2>
+      <p>Hi! I'm Esther, a passionate front-end developer with a keen eye for detail and a love for creative digital experiences.</p>
+      <p>Though I'm only three months into this journey, I'm already building beautiful websites with HTML, CSS, and JavaScript, and loving every moment of it!</p>
+      <p>Beyond code, I believe in the power of growth, consistency, and showing up,one project at a time. Let’s build something beautiful together.</p>
+    </div>
+  </section>
+
+</body>
+</html>
